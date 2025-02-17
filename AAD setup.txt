@@ -1,0 +1,111 @@
+To set up your development environment for Android development, you'll need to install the following components:
+
+Java Development Kit (JDK)
+Android Software Development Kit (SDK)
+Eclipse IDE (optional, though Android Studio is recommended)
+Android Development Tools (ADT) plugin (for Eclipse)
+Here's a step-by-step guide for each:
+
+1. Install Java Development Kit (JDK)
+Step 1: Download JDK
+
+Visit the official JDK download page: Oracle JDK Download or OpenJDK.
+Download the JDK installer based on your operating system (Windows, macOS, Linux).
+Step 2: Install JDK
+
+Run the installer and follow the instructions.
+After installation, set up the JAVA_HOME environment variable to point to your JDK installation path.
+Windows:
+Open System Properties → Environment Variables.
+Add a new System Variable:
+Name: JAVA_HOME
+Value: Path to the JDK (e.g., C:\Program Files\Java\jdk-11.0.x)
+Add %JAVA_HOME%\bin to the Path variable.
+macOS/Linux:
+Add the following to your ~/.bash_profile or ~/.zshrc file:
+bash
+Copy
+Edit
+export JAVA_HOME=/path/to/your/jdk
+export PATH=$JAVA_HOME/bin:$PATH
+Run source ~/.bash_profile or source ~/.zshrc to apply the changes.
+Step 3: Verify Installation Open a terminal/command prompt and run:
+
+bash
+Copy
+Edit
+java -version
+You should see the installed JDK version.
+
+2. Install Android SDK
+Step 1: Download Android SDK
+
+You can either use Android Studio (recommended) which includes Android SDK, or you can download the SDK tools separately from Android SDK page.
+Step 2: Install Android SDK (if using standalone SDK tools)
+
+Extract the SDK tools to a directory of your choice (e.g., C:\Android\SDK on Windows).
+Add the following to your PATH variable to access SDK tools from anywhere:
+Windows:
+Add C:\Android\SDK\tools\bin to your Path environment variable.
+macOS/Linux:
+Add the following to ~/.bash_profile or ~/.zshrc:
+bash
+Copy
+Edit
+export ANDROID_HOME=/path/to/your/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$PATH
+Step 3: Set up SDK Manager
+
+Open a terminal/command prompt and navigate to the SDK directory.
+Run:
+bash
+Copy
+Edit
+sdkmanager --update
+You can also install specific SDK platforms, build tools, and system images using the following command:
+bash
+Copy
+Edit
+sdkmanager "platform-tools" "platforms;android-29" "build-tools;29.0.2"
+3. Install Eclipse IDE (Optional)
+Step 1: Download Eclipse IDE
+
+Visit the official Eclipse website: Eclipse Download.
+Choose the Eclipse IDE for Java Developers package.
+Step 2: Install Eclipse IDE
+
+Run the downloaded installer and follow the instructions for your OS.
+4. Install Android Development Tools (ADT) Plugin for Eclipse
+Step 1: Open Eclipse
+
+Launch Eclipse IDE.
+Step 2: Install ADT Plugin
+
+Open Eclipse → Help → Eclipse Marketplace.
+Search for Android Development Tools (ADT).
+Click Go and then click Install next to ADT.
+Follow the installation steps and restart Eclipse after installation.
+Step 3: Configure ADT Plugin
+
+Open Window → Preferences.
+Navigate to Android → SDK Location.
+Set the SDK location to the path where you installed the Android SDK.
+5. Create Android Virtual Device (AVD)
+Step 1: Open AVD Manager
+
+In Eclipse (with ADT), go to Window → AVD Manager.
+In Android Studio, you can access the AVD Manager from the toolbar or via Tools → AVD Manager.
+Step 2: Create a New Virtual Device
+
+Click Create Virtual Device.
+Choose the device type (e.g., Pixel, Nexus, etc.).
+Select the system image for the device (e.g., Android 10, Android 11).
+Configure other settings as required (e.g., memory, storage, etc.).
+Click Finish to create the AVD.
+Step 3: Run the Emulator
+
+In the AVD Manager, select the newly created device and click Play to launch the emulator.
+Using Android Studio (Recommended)
+While Eclipse with ADT used to be the traditional way to develop Android applications, Android Studio is now the recommended IDE for Android development. It includes the SDK, emulator, and all the necessary tools for building Android apps.
+
+You can download Android Studio from here.
