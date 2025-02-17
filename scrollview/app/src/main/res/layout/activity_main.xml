@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ScrollView Example"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a demonstration of ScrollView in Android.
+                         Scroll down to see more content."
+            android:textSize="18sp"
+            android:paddingBottom="10dp"/>
+
+        <!-- Repeating Content to Enable Scrolling -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content 1: Android ScrollView allows vertical scrolling."
+            android:textSize="16sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content 2: It is useful when the content exceeds the screen height."
+            android:textSize="16sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content 3: You can nest LinearLayout or other layouts inside ScrollView."
+            android:textSize="16sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content 4: ScrollView only supports vertical scrolling by default."
+            android:textSize="16sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End of the ScrollView demonstration."
+            android:textSize="16sp"
+            android:paddingBottom="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

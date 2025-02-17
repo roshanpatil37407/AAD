@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to ScrollView Example"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll down to see more content"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:padding="5dp" />
+
+        <!-- Multiple TextViews to create scrollable content -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Nulla consequat sapien ac lorem tristique, a ultrices dui efficitur.
+                          Proin eget orci nec orci dictum tincidunt."
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Another paragraph of text to ensure scrolling is demonstrated.
+                          This paragraph represents a lot of content that would otherwise not fit on one screen."
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Me"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
